@@ -8,17 +8,20 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
   title: {
-    default: "Car Candy Auto Detailing | Professional Auto Detailing in Aston, PA",
-    template: "%s | Car Candy Auto Detailing",
+    default: "Lyons Detailing | Professional Auto Detailing",
+    template: "%s | Lyons Detailing",
   },
   description:
-    "Professional auto detailing services in Aston, PA and Delaware County. Interior & exterior detailing, waxing, paint correction. Call (610) 726-0151.",
+    "Lyons Detailing offers professional auto detailing services including interior detailing, exterior detailing, paint correction, and ceramic coating. Book your detail today.",
   keywords: [
-    "auto detailing Aston PA",
-    "car detailing Delaware County",
+    "auto detailing",
+    "car detailing",
     "interior detailing",
     "exterior detailing",
-    "Car Candy Auto Detailing",
+    "paint correction",
+    "ceramic coating",
+    "Lyons Detailing",
+    "professional car detailing",
   ],
   icons: {
     icon: [

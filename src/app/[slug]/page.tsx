@@ -28,21 +28,15 @@ export default async function LocationPage({ params }: Props) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: "Car Candy Auto Detailing",
-    description: `Professional auto detailing services in ${location.name}, PA.`,
-    telephone: "+16107260151",
-    email: "carcandyautodetailing@gmail.com",
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "Aston",
-      addressRegion: "PA",
-      addressCountry: "US",
-    },
+    name: "Lyons Detailing",
+    description: `Professional auto detailing services in the ${location.name} area.`,
+    email: "info@lyonsdetailing.com",
+    url: "https://lyonsdetailing.com",
     areaServed: {
       "@type": "City",
-      name: `${location.name}, PA`,
+      name: location.name,
     },
-    openingHours: "Mo-Su 08:00-18:00",
+    openingHours: "Mo-Sa 08:00-18:00",
   };
 
   return (
@@ -55,7 +49,7 @@ export default async function LocationPage({ params }: Props) {
         </div>
         <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl lg:text-5xl font-bold text-white mb-6">
-            Auto Detailing in <span className="text-primary">{location.name}</span> | Car Candy Detailing
+            Auto Detailing in <span className="text-primary">{location.name}</span> | Lyons Detailing
           </h1>
 
           <p className="text-gray-300 leading-relaxed mb-8 text-lg">{location.description}</p>
@@ -64,13 +58,16 @@ export default async function LocationPage({ params }: Props) {
             <h2 className="text-xl font-bold text-white mb-4">Services Available in {location.name}</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {[
-                "Complete Detail Package (Starting at $180)",
-                "Interior Detailing (Starting at $90)",
-                "Exterior Detailing (Starting at $90)",
-                "Full Wax ($35)",
-                "Compound Buff & Wax ($80)",
-                "Engine Detail ($60–$100)",
-                "Floormat Replacement ($30)",
+                "Full Detail Package (Starting at $275)",
+                "Interior Detailing (Starting at $150)",
+                "Exterior Detailing (Starting at $150)",
+                "Carnauba Wax ($75)",
+                "Paint Sealant ($100)",
+                "Single Stage Paint Correction ($300–$500)",
+                "Two Stage Paint Correction ($500–$900)",
+                "Ceramic Coating (From $400)",
+                "Engine Detail ($80–$120)",
+                "Headlight Restoration ($60)",
               ].map((s) => (
                 <div key={s} className="flex items-center gap-2 text-gray-300">
                   <Check className="w-4 h-4 text-primary shrink-0" />
@@ -84,12 +81,15 @@ export default async function LocationPage({ params }: Props) {
             <Link href="/get-quote" className="inline-flex items-center justify-center bg-primary text-white font-bold px-8 py-4 rounded-lg hover:bg-primary-dark transition">
               BOOK NOW
             </Link>
+            <a href="mailto:info@lyonsdetailing.com" className="inline-flex items-center justify-center bg-white/10 text-white font-bold px-8 py-4 rounded-lg hover:bg-white/20 transition border border-white/20">
+              Contact Us
+            </a>
           </div>
 
           <div className="mt-12 p-6 rounded-xl bg-dark-lighter border border-white/5">
             <p className="text-gray-400 text-sm">
-              Serving {location.name} and all of Delaware County, PA. Call{" "}
-              <a href="tel:+16107260151" className="text-primary font-semibold">(610) 726-0151</a> to schedule your detail today.
+              Serving the {location.name} area and surrounding communities. Email{" "}
+              <a href="mailto:info@lyonsdetailing.com" className="text-primary font-semibold">info@lyonsdetailing.com</a> to schedule your detail today.
             </p>
           </div>
         </div>

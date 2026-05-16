@@ -70,13 +70,9 @@ export default function QuoteForm() {
           </div>
           <h3 className="text-xl font-bold text-white mb-3">Request Received — We&apos;ll Be in Touch Shortly</h3>
           <p className="text-gray-400 text-sm text-center max-w-md mb-6">
-            Thanks for contacting Car Candy Auto Detailing. A member of our team will reach out shortly to confirm your service details and provide accurate pricing for your vehicle in Delaware County, PA.
+            Thanks for contacting Lyons Detailing. A member of our team will reach out shortly to confirm your service details and provide accurate pricing.
           </p>
           <div className="text-sm text-gray-400 text-center space-y-1">
-            <p>
-              Need immediate assistance? Call us at{" "}
-              <a href="tel:+16107260151" className="text-primary font-semibold hover:text-primary-light transition">(610) 726-0151</a>
-            </p>
             <p>
               Want to skip the wait?{" "}
               <a href="/contact" className="text-primary font-semibold underline hover:text-primary-light transition">Schedule your appointment now →</a>
@@ -123,7 +119,7 @@ export default function QuoteForm() {
               type="text"
               value={zip}
               onChange={(e) => setZip(e.target.value.replace(/\D/g, "").slice(0, 5))}
-              placeholder="19014"
+              placeholder="Zip Code"
               className="w-full px-3.5 py-2.5 rounded-lg border border-white/10 bg-dark text-white outline-none transition text-sm focus:ring-2 focus:ring-primary/40 focus:border-primary placeholder-gray-600"
             />
           </div>

@@ -3,29 +3,32 @@
 import { useState, useMemo } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Car, Paintbrush, Sparkles, ChevronLeft, ChevronRight, Check } from "lucide-react";
+import { Car, Paintbrush, Sparkles, Shield, ChevronLeft, ChevronRight, Check } from "lucide-react";
 
 const MONTH_NAMES = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 const DAY_NAMES = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
 
 const SERVICES = [
-  { id: "interior", icon: <Car className="w-10 h-10" />, title: "Interior Detailing", desc: "Deep cleaning for seats, carpets, and interior surfaces" },
-  { id: "exterior", icon: <Paintbrush className="w-10 h-10" />, title: "Exterior Detailing", desc: "Hand wash, wheels, and paint-safe exterior cleaning" },
-  { id: "full", icon: <Sparkles className="w-10 h-10" />, title: "Full Detail Package", desc: "Complete interior and exterior detailing service" },
+  { id: "interior", icon: <Car className="w-10 h-10" />, title: "Interior Detailing", desc: "Deep cleaning for seats, carpets, and all interior surfaces — starting at $150" },
+  { id: "exterior", icon: <Paintbrush className="w-10 h-10" />, title: "Exterior Detailing", desc: "Foam wash, clay bar, hand wax & tire dressing — starting at $150" },
+  { id: "full", icon: <Sparkles className="w-10 h-10" />, title: "Full Detail Package", desc: "Complete interior and exterior detailing — starting at $275" },
+  { id: "paint", icon: <Shield className="w-10 h-10" />, title: "Paint Correction & Protection", desc: "Paint correction, ceramic coating, and paint protection" },
 ];
 
 const CONDITIONS = [
   { id: "light", label: "Light cleaning", desc: "Regular maintenance, mostly clean" },
   { id: "moderate", label: "Moderate cleaning", desc: "Some buildup, needs a good detail" },
   { id: "heavy", label: "Heavy dirt / stains", desc: "Significant grime, stains, or neglect" },
-  { id: "unsure", label: "Not sure?", desc: "We'll figure it out together" },
+  { id: "unsure", label: "Not sure?", desc: "We&apos;ll figure it out together" },
 ];
 
 const ADDONS = [
-  { id: "wax", label: "Full Wax" },
-  { id: "buff", label: "Compound Buff & Wax" },
-  { id: "engine", label: "Engine Detail" },
-  { id: "floormats", label: "Floor Mat Replacement" },
+  { id: "wax", label: "Carnauba Wax (+$75)" },
+  { id: "sealant", label: "Paint Sealant (+$100)" },
+  { id: "engine", label: "Engine Detail (+$80–$120)" },
+  { id: "headlights", label: "Headlight Restoration (+$60)" },
+  { id: "odor", label: "Odor Bomb Treatment (+$40)" },
+  { id: "pethair", label: "Pet Hair Removal (+$50–$100)" },
 ];
 
 function formatPhone(value: string): string {
@@ -86,11 +89,11 @@ export default function GetQuotePage() {
             </div>
             <h2 className="text-2xl font-bold text-white mb-3">Quote Request Received!</h2>
             <p className="text-gray-400 mb-8">
-              Thanks for reaching out. A member of our team will contact you shortly with your personalized quote.
+              Thanks for reaching out to Lyons Detailing. A member of our team will contact you shortly with your personalized quote.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <a href="tel:+16107260151" className="inline-flex items-center justify-center bg-primary text-white font-bold px-6 py-3 rounded-lg hover:bg-primary-dark transition">
-                Call (610) 726-0151
+              <a href="mailto:info@lyonsdetailing.com" className="inline-flex items-center justify-center bg-primary text-white font-bold px-6 py-3 rounded-lg hover:bg-primary-dark transition">
+                Email Us
               </a>
               <Link href="/" className="inline-flex items-center justify-center bg-white/10 text-white font-bold px-6 py-3 rounded-lg hover:bg-white/20 transition border border-white/20">
                 Back to Home
@@ -129,7 +132,7 @@ export default function GetQuotePage() {
             <div className="text-center">
               <h1 className="text-3xl lg:text-4xl font-bold text-white mb-2">What does your vehicle need?</h1>
               <p className="text-gray-400 mb-10">Select a service to get your free quote started.</p>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {SERVICES.map((s) => (
                   <button
                     key={s.id}
@@ -245,7 +248,7 @@ export default function GetQuotePage() {
                       type="text"
                       value={zip}
                       onChange={(e) => setZip(e.target.value.replace(/\D/g, "").slice(0, 5))}
-                      placeholder="19014"
+                      placeholder="Zip Code"
                       className="w-full px-4 py-3 rounded-lg border border-white/10 bg-dark-lighter text-white outline-none text-sm focus:ring-2 focus:ring-primary/40 focus:border-primary placeholder-gray-600"
                     />
                   </div>
@@ -371,12 +374,12 @@ function Header() {
       <div className="max-w-2xl mx-auto flex items-center justify-between">
         <div className="flex items-center gap-3">
           <Link href="/">
-            <Image src="/logoheader.png" alt="Car Candy" width={140} height={80} className="h-10 w-auto" />
+            <Image src="/logoheader.png" alt="Lyons Detailing" width={140} height={80} className="h-10 w-auto" />
           </Link>
-          <span className="hidden sm:block text-gray-500 text-xs border-l border-white/10 pl-3">Auto Detailing in Delaware County, PA</span>
+          <span className="hidden sm:block text-gray-500 text-xs border-l border-white/10 pl-3">Professional Auto Detailing</span>
         </div>
-        <a href="tel:+16107260151" className="text-gray-400 hover:text-primary transition text-sm hidden sm:block">
-          (610) 726-0151
+        <a href="mailto:info@lyonsdetailing.com" className="text-gray-400 hover:text-primary transition text-sm hidden sm:block">
+          info@lyonsdetailing.com
         </a>
       </div>
     </div>
