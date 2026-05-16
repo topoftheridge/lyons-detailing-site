@@ -19,7 +19,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20 lg:h-24">
           <Link href="/" className="flex items-center gap-2 shrink-0">
-            <Image src="/lyonsdetailinglogo.png" alt="Lyons Detailing" width={200} height={60} className="h-[52px] lg:h-[60px] w-auto object-contain" priority />
+            <Image src="/lyonsdetailinglogo.png" alt="Lyons Detailing" width={240} height={80} className="h-[68px] lg:h-[80px] w-auto object-contain" priority />
           </Link>
 
           {/* Desktop Nav */}

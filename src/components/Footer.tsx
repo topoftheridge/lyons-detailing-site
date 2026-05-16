@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="mb-4">
-              <Image src="/lyonsdetailinglogo.png" alt="Lyons Detailing" width={200} height={60} className="h-14 w-auto object-contain" />
+              <Image src="/lyonsdetailinglogo.png" alt="Lyons Detailing" width={260} height={80} className="h-24 w-auto object-contain" />
             </div>
             <p className="text-sm mb-4">Professional auto detailing services. We bring your vehicle back to life — inside and out.</p>
             <div className="space-y-2 text-sm">
