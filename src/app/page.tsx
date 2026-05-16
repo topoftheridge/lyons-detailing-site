@@ -99,7 +99,7 @@ export default function HomePage() {
               <div className="absolute inset-0 bg-black/60" />
               <div className="relative p-8 flex flex-col items-start gap-3">
                 <h3 className="text-3xl lg:text-4xl font-bold text-white leading-tight">Interior Detailing</h3>
-                <p className="text-primary font-bold text-lg drop-shadow-[0_0_14px_rgba(29,78,216,0.7)]">Starting at $150</p>
+                <p className="text-primary font-bold text-lg drop-shadow-[0_0_14px_rgba(133,26,28,0.8)]">Starting at $150</p>
                 <p className="text-gray-200 text-base leading-relaxed">Deep vacuum, carpet & upholstery shampoo, leather conditioning, odor elimination, and interior glass cleaning.</p>
                 <span className="text-primary text-base font-medium group-hover:underline mt-1">Learn More →</span>
               </div>
@@ -111,7 +111,7 @@ export default function HomePage() {
               <div className="absolute inset-0 bg-black/60" />
               <div className="relative p-8 flex flex-col items-start gap-3">
                 <h3 className="text-3xl lg:text-4xl font-bold text-white leading-tight">Exterior Detailing</h3>
-                <p className="text-primary font-bold text-lg drop-shadow-[0_0_14px_rgba(29,78,216,0.7)]">Starting at $150</p>
+                <p className="text-primary font-bold text-lg drop-shadow-[0_0_14px_rgba(133,26,28,0.8)]">Starting at $150</p>
                 <p className="text-gray-200 text-base leading-relaxed">Foam cannon wash, clay bar decontamination, wheel & tire deep clean, hand wax, tire dressing, and exterior glass.</p>
                 <span className="text-primary text-base font-medium group-hover:underline mt-1">Learn More →</span>
               </div>
@@ -123,7 +123,7 @@ export default function HomePage() {
               <div className="absolute inset-0 bg-black/60" />
               <div className="relative p-8 flex flex-col items-start gap-3">
                 <h3 className="text-2xl lg:text-3xl font-bold text-white leading-tight">Paint Correction &amp;&nbsp;Protection</h3>
-                <p className="text-primary font-bold text-lg drop-shadow-[0_0_14px_rgba(29,78,216,0.7)]">From $75</p>
+                <p className="text-primary font-bold text-lg drop-shadow-[0_0_14px_rgba(133,26,28,0.8)]">From $75</p>
                 <p className="text-gray-200 text-base leading-relaxed">Carnauba wax, paint sealant, single & two-stage paint correction, and ceramic coating packages.</p>
                 <span className="text-primary text-base font-medium group-hover:underline mt-1">Learn More →</span>
               </div>
@@ -136,7 +136,7 @@ export default function HomePage() {
               <div>
                 <h3 className="text-2xl lg:text-3xl font-bold text-white mb-2">Full Detail Package</h3>
                 <p className="text-gray-300 text-base lg:text-lg leading-relaxed mb-3">Interior + Exterior detailing bundled together for a complete vehicle transformation.</p>
-                <p className="text-primary font-bold text-xl drop-shadow-[0_0_14px_rgba(29,78,216,0.7)]">Starting at $275</p>
+                <p className="text-primary font-bold text-xl drop-shadow-[0_0_14px_rgba(133,26,28,0.8)]">Starting at $275</p>
                 <p className="text-gray-400 text-sm mt-1">Final pricing depends on vehicle size and condition.</p>
               </div>
               <div className="shrink-0">

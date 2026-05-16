@@ -374,7 +374,7 @@ function Header() {
       <div className="max-w-2xl mx-auto flex items-center justify-between">
         <div className="flex items-center gap-3">
           <Link href="/">
-            <Image src="/logoheader.png" alt="Lyons Detailing" width={140} height={80} className="h-10 w-auto" />
+            <Image src="/lyonsdetailinglogo.png" alt="Lyons Detailing" width={160} height={60} className="h-10 w-auto object-contain" />
           </Link>
           <span className="hidden sm:block text-gray-500 text-xs border-l border-white/10 pl-3">Professional Auto Detailing</span>
         </div>

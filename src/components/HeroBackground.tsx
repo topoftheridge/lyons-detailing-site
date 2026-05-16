@@ -4,10 +4,10 @@ export default function HeroBackground({ children }: { children: React.ReactNode
   return (
     <div className="relative overflow-hidden">
       <Image
-        src="/heropic1.jpg"
+        src="/lyonsdetailinghero.png"
         alt=""
         fill
-        className="object-cover object-right-center sm:object-center"
+        className="object-cover object-center"
         priority
       />
       <div className="absolute inset-0 bg-black/50" />

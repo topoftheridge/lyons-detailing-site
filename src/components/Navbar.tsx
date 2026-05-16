@@ -15,11 +15,11 @@ export default function Navbar() {
 
   return (
     <>
-    <nav className="sticky top-0 z-50 bg-black/95 backdrop-blur border-b border-white/10">
+    <nav className="sticky top-0 z-50 bg-[#851a1c] border-b border-white/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20 lg:h-24">
           <Link href="/" className="flex items-center gap-2 shrink-0">
-            <Image src="/logoheader.png" alt="Lyons Detailing" width={170} height={100} className="h-14 lg:h-[72px] w-auto" priority />
+            <Image src="/lyonsdetailinglogo.png" alt="Lyons Detailing" width={200} height={60} className="h-[52px] lg:h-[60px] w-auto object-contain" priority />
           </Link>
 
           {/* Desktop Nav */}
@@ -37,11 +37,11 @@ export default function Navbar() {
                 </button>
                 {servicesOpen && (
                   <div className="absolute top-full left-0 mt-0 pt-2">
-                    <div className="bg-dark-lighter border border-white/10 rounded-lg shadow-xl py-2 w-64">
-                      <Link href="/services/full-detail-package" className="block px-4 py-2.5 text-base text-gray-300 hover:bg-primary/20 hover:text-primary transition">Full Detail Package</Link>
-                      <Link href="/services/interior-detailing" className="block px-4 py-2.5 text-base text-gray-300 hover:bg-primary/20 hover:text-primary transition">Interior Detailing</Link>
-                      <Link href="/services/exterior-detailing" className="block px-4 py-2.5 text-base text-gray-300 hover:bg-primary/20 hover:text-primary transition">Exterior Detailing</Link>
-                      <Link href="/services/paint-protection" className="block px-4 py-2.5 text-base text-gray-300 hover:bg-primary/20 hover:text-primary transition">Paint Correction &amp; Protection</Link>
+                    <div className="bg-[#5a1012] border border-white/20 rounded-lg shadow-xl py-2 w-64">
+                      <Link href="/services/full-detail-package" className="block px-4 py-2.5 text-base text-white/90 hover:bg-white/10 hover:text-white transition">Full Detail Package</Link>
+                      <Link href="/services/interior-detailing" className="block px-4 py-2.5 text-base text-white/90 hover:bg-white/10 hover:text-white transition">Interior Detailing</Link>
+                      <Link href="/services/exterior-detailing" className="block px-4 py-2.5 text-base text-white/90 hover:bg-white/10 hover:text-white transition">Exterior Detailing</Link>
+                      <Link href="/services/paint-protection" className="block px-4 py-2.5 text-base text-white/90 hover:bg-white/10 hover:text-white transition">Paint Correction &amp; Protection</Link>
                     </div>
                   </div>
                 )}
@@ -56,12 +56,12 @@ export default function Navbar() {
                 </button>
                 {areasOpen && (
                   <div className="absolute top-full left-0 mt-0 pt-2">
-                    <div className="bg-dark-lighter border border-white/10 rounded-lg shadow-xl py-2 w-56">
+                    <div className="bg-[#5a1012] border border-white/20 rounded-lg shadow-xl py-2 w-56">
                       {locations.map((loc) => (
                         <Link
                           key={loc.slug}
                           href={`/${loc.slug}`}
-                          className="block px-4 py-2.5 text-base text-gray-300 hover:bg-primary/20 hover:text-primary transition"
+                          className="block px-4 py-2.5 text-base text-white/90 hover:bg-white/10 hover:text-white transition"
                         >
                           {loc.name}
                         </Link>
@@ -80,7 +80,7 @@ export default function Navbar() {
               </a>
               <Link
                 href="/get-quote"
-                className="bg-primary text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-primary-dark transition shadow-sm"
+                className="bg-white text-[#851a1c] px-5 py-2.5 rounded-lg font-semibold hover:bg-gray-100 transition shadow-sm"
               >
                 BOOK NOW
               </Link>
@@ -103,7 +103,7 @@ export default function Navbar() {
     <div className={`lg:hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-[60] transition-opacity duration-300 ${mobileOpen ? "opacity-100" : "opacity-0 pointer-events-none"}`} onClick={() => setMobileOpen(false)} />
 
     {/* Mobile Menu Panel */}
-    <div className={`lg:hidden fixed top-0 right-0 h-full w-[280px] bg-black/95 backdrop-blur-lg border-l border-white/10 z-[70] transform transition-transform duration-300 ease-out ${mobileOpen ? "translate-x-0" : "translate-x-full"} overflow-y-auto`}>
+    <div className={`lg:hidden fixed top-0 right-0 h-full w-[280px] bg-[#6b1416] border-l border-white/20 z-[70] transform transition-transform duration-300 ease-out ${mobileOpen ? "translate-x-0" : "translate-x-full"} overflow-y-auto`}>
       <div className="flex items-center justify-end p-5">
         <button className="p-2 text-white" onClick={() => setMobileOpen(false)} aria-label="Close menu">
           <X className="w-6 h-6" />
@@ -152,7 +152,7 @@ export default function Navbar() {
           <a href="tel:+10000000000" className="flex items-center gap-2 font-bold text-white text-lg hover:text-primary transition">
             <Phone className="w-5 h-5" /> Call Now
           </a>
-          <Link href="/get-quote" className="block text-center bg-primary text-white px-5 py-3 rounded-lg font-semibold hover:bg-primary-dark transition" onClick={() => setMobileOpen(false)}>BOOK NOW</Link>
+          <Link href="/get-quote" className="block text-center bg-white text-[#851a1c] px-5 py-3 rounded-lg font-semibold hover:bg-gray-100 transition" onClick={() => setMobileOpen(false)}>BOOK NOW</Link>
         </div>
       </div>
     </div>

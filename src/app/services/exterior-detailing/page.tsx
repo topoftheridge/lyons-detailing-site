@@ -16,7 +16,7 @@ export default function ExteriorDetailingPage() {
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12">
           <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">Exterior Detailing</h1>
-          <p className="text-primary font-bold text-xl drop-shadow-[0_0_14px_rgba(29,78,216,0.7)]">Starting at $150</p>
+          <p className="text-primary font-bold text-xl drop-shadow-[0_0_14px_rgba(133,26,28,0.8)]">Starting at $150</p>
           <p className="text-gray-400 mt-2">Final pricing depends on vehicle size and condition.</p>
           <p className="text-gray-300 mt-1">Most vehicles typically fall between $150–$250.</p>
         </div>

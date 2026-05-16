@@ -5,13 +5,13 @@ import { locations } from "@/data/locations";
 
 export default function Footer() {
   return (
-    <footer className="bg-dark-light border-t border-white/10 text-gray-400">
+    <footer className="bg-[#0f0505] border-t border-[#851a1c]/40 text-gray-400">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Company Info */}
           <div>
             <div className="mb-4">
-              <Image src="/logoheader.png" alt="Lyons Detailing" width={170} height={100} className="h-16 w-auto" />
+              <Image src="/lyonsdetailinglogo.png" alt="Lyons Detailing" width={200} height={60} className="h-14 w-auto object-contain" />
             </div>
             <p className="text-sm mb-4">Professional auto detailing services. We bring your vehicle back to life — inside and out.</p>
             <div className="space-y-2 text-sm">
